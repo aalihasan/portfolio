@@ -7,7 +7,11 @@ const Rootlayout = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <main className="pt-16">
+    
+        
+        <Outlet />
+      </main>
       <Footer></Footer>
     </div>
   );

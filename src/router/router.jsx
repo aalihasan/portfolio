@@ -4,15 +4,20 @@ import Rootlayout from '../layouts/Rootlayout';
 import Home from '../pages/home/Home';
 
 
-export const router= createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: '/',
     Component: Rootlayout,
-    Children: [
+    children: [
       {
         index: true,
-        Component: Home
+        Component:Home,
+       
       },
-    ]
-  }
-])
+    
+     
+    ],
+  },
+
+]);
+
