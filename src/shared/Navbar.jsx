@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Navbar = () => {
@@ -8,8 +8,6 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -40,23 +38,7 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          {/* Social Icons */}
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noreferrer"
-            className="text-xl text-gray-600 hover:text-black"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noreferrer"
-            className="text-xl text-blue-600"
-          >
-            <FaLinkedin />
-          </a>
+       
 
           <div><ThemeToggle></ThemeToggle></div>
         </div>
@@ -90,16 +72,7 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          {/* Social Icons */}
-          <div className="flex gap-4 pt-2">
-            <a href="https://github.com/yourusername" target="_blank">
-              <FaGithub className="text-xl text-gray-700" />
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-              <FaLinkedin className="text-xl text-blue-600" />
-            </a>
-            
-          </div>
+        
           <div><ThemeToggle></ThemeToggle></div>
         </div>
       )}
