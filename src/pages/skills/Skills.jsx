@@ -34,13 +34,13 @@ const Skills = () => {
       className="py-16 px-4 md:px-20 transition-colors duration-500"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold  mb-10">
-          My Skills
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold  mb-10">My Skills</h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center">
           {skillsList.map(({ icon, name }, idx) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
               key={idx}
               className="group flex flex-col items-center p-6 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors duration-300 shadow-md hover:shadow-lg"
             >
