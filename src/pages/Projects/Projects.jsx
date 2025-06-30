@@ -1,32 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router'; // ✅ Correct import
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
+// ✅ Image imports
+import subscribe from '../../assets/SubscriptionBox.png';
+import garden from '../../assets/garden.png'
+import rannaghor from '../../assets/rannaghor.png'
 
 const projects = [
   {
     id: 1,
-    name: 'FastParcel – Delivery Management',
-    image: '/images/fastparcel.png',
+    name: 'SubscriptionBox',
+    image: subscribe,
     tech: ['React', 'Tailwind', 'Firebase', 'MongoDB'],
-    liveLink: 'https://fastparcel.web.app',
-    github: 'https://github.com/yourname/fastparcel-client',
+    liveLink: 'https://react-authentication-aalihasan.web.app/',
+    github:
+      'https://github.com/programming-hero-web-course1/b11a9-react-authentication-aalihasan',
   },
   {
     id: 2,
-    name: 'GreenGarden – Gardening Hub',
-    image: '../../assets/profile.jpg',
+    name: 'GreenGarden ',
+    image: garden,
     tech: ['React', 'Express', 'Firebase', 'MongoDB'],
-    liveLink: 'https://greengarden.vercel.app',
-    github: 'https://github.com/yourname/greengarden-client',
+    liveLink: 'https://gardening-community-988e1.web.app/',
+    github:
+      'https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-aalihasan',
+    github2:
+      'https://github.com/Programming-Hero-Web-Course4/b11a10-server-side-aalihasan',
   },
   {
     id: 3,
-    name: 'Foodie – Restaurant App',
-    image: '/images/foodie.png',
-    tech: ['React', 'Firebase', 'Tailwind css', 'MongoDB'],
-    liveLink: 'https://foodieapp.web.app',
-    github: 'https://github.com/yourname/foodie-client',
+    name: 'RannaGhor',
+    image: rannaghor,
+    tech: ['React', 'Firebase', 'Tailwind CSS', 'MongoDB'],
+    liveLink: ' https://restaurant-management-21bba.web.app/',
+    github:
+      'https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-aalihasan',
+    githu2:
+      'https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-aalihasan',
   },
 ];
 
@@ -34,9 +45,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 px-4 md:px-20">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold  mb-12">
-          My Projects
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">My Projects</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map(project => (
@@ -92,15 +101,33 @@ const Projects = () => {
                       </a>
                     </div>
 
-                    <div className="tooltip tooltip-top" data-tip="GitHub Repo">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-blue-700"
+                    <div className=" flex gap-1">
+                      <div
+                        className=" tooltip tooltip-top"
+                        data-tip="GitHub Repo client"
                       >
-                        <FaGithub />
-                      </a>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hover:text-blue-700"
+                        >
+                          <FaGithub />
+                        </a>
+                      </div>
+                      <div
+                        className=" tooltip tooltip-bottom"
+                        data-tip="GitHub Repo server"
+                      >
+                        <a
+                          href={project.github2}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hover:text-blue-700"
+                        >
+                          <FaGithub />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

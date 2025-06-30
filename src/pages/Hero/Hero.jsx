@@ -22,7 +22,7 @@ const Hero = () => {
         {/* Social Icons */}
         <div className="mt-6 flex justify-center items-center md:justify-start gap-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/aalihasan"
             target="_blank"
             rel="noreferrer"
             className="text-2xl hover:text-blue-800  transition-colors"
@@ -30,7 +30,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/md-hasan-ali-535954251/"
             target="_blank"
             rel="noreferrer"
             className="text-2xl text-blue-600 dark:text-blue-400 hover:text-blue-800 transition-colors"
@@ -40,9 +40,11 @@ const Hero = () => {
         </div>
         <div>
           <a
-            href="/Hasan-Ali-Resume.pdf"
+            href="/Resume.pdf"
             download
-            className="inline-block mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary mt-2"
           >
             Download Resume
           </a>

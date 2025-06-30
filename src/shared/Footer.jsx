@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import logo from '../../public/logo.png'
 
 const Footer = () => {
   return (
@@ -7,7 +8,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
         {/* Left Side - Info */}
         <div>
-          <h3 className="text-xl font-bold">Hasan Ali</h3>
+          <div className='flex items-center'>
+            <img className='w-20' src={logo} alt="" />
+            <h3 className="text-xl font-bold">Hasan Ali</h3>
+          </div>
           <p className="text-sm">Full Stack Developer</p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             BSc in CSE | Graduate in August 2026
@@ -17,7 +21,7 @@ const Footer = () => {
         {/* Middle - Social Links */}
         <div className="flex gap-4 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/aalihasan"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-600"
@@ -25,7 +29,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/md-hasan-ali-535954251/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-600"
@@ -33,18 +37,12 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/kajol.ahmed.334491/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-600"
           >
             <FaFacebook />
-          </a>
-          <a
-            href="mailto:hasanali.dev@gmail.com"
-            className="hover:text-blue-600"
-          >
-            <FaEnvelope />
           </a>
         </div>
       </div>

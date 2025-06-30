@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import logo from '../../public/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,9 @@ const Navbar = () => {
       <div className="navbar max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <h1 className="text-xl md:text-2xl font-bold text-gray-800">
+          <img className='w-20' src={logo} alt="" />
+
+          <h1 className="text-xl md:text-3xl font-bold text-gray-800">
             Hasan Ali
           </h1>
         </div>
